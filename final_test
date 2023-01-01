@@ -1,0 +1,307 @@
+Kategori : Introduction to JavaScript
+1. Pada lingkungan manakah JavaScript dapat dijalankan?
+A Browser
+
+Kategori : Introduction to JavaScript
+2. Dari tiga bahasa utama untuk mengembangkan sebuah website, apakah peran dari JavaScript?
+B Menambahkan fitur dan fungsionalitas tambahan supaya website menjadi lebih interaktif.
+Benar
+
+Kategori : JavaScript Fundamentals
+3. Di antara tipe data berikut ini manakah yang tidak termasuk tipe data primitif?
+D Object
+Benar
+
+Kategori : JavaScript Fundamentals
+4. 
+let x;
+x = 7;
+x = 'JS is great';
+console.log(x);
+Nilai dari variabel x di atas yang ditampilkan adalah...
+C JS is great
+Benar
+
+Kategori : JavaScript Fundamentals
+5. Perhatikan kode berikut:
+
+const stock = 0;
+const milkNeeded = 25;
+
+if (stock > milkNeeded) {
+  stock = stock - milkNeeded;
+  console.log('Processing your order...');
+} else {
+  console.log('Out of Stock!');
+}
+
+console.log('Thank you');
+Output dari program di atas adalah...
+A
+Out of Stock!
+Thank you
+Benar
+
+Kategori : JavaScript Fundamentals
+6. Perhatikan kode berikut:
+
+if ((true || false) && (false || false)) {
+    console.log("It's true");
+} else {
+    console.log("It's false");
+}
+Output dari program di atas adalah...
+A
+It's false
+Benar
+
+7. Kategori : Data Structure
+Terdapat array seperti berikut:
+
+const phoneticAlphabet = ["Alpha", "Bravo", "Delta"];
+
+// TODO: Kode untuk menambahkan item Charlie pada index ke-2
+
+console.log(phoneticAlphabet);
+Manakan kode yang perlu Anda tambahkan pada TODO supaya array phoneticAlphabet akan menampilkan output: [ 'Alpha', 'Bravo', 'Charlie', 'Delta' ] ?
+D
+phoneticAlphabet.splice(2, 0, “Charlie”);
+Benar
+
+Kategori : Data Structure
+8. Diberikan sejumlah elemen yang harus disimpan secara berurutan. Manakah struktur data yang akan Anda gunakan?
+C Array
+Benar
+
+Kategori : Data Structure
+9. Perhatikan potongan kode berikut:
+
+const capital = {
+    "Jakarta": "Indonesia",
+    "London": "England",
+    "Tokyo": "Japan"
+}
+capital["New Delhi"] = "Indonesia";
+
+console.log(capital["Indonesia"]);
+Ketika kode di atas dijalankan, maka outputnya adalah...
+C
+undefined
+Benar
+
+Kategori : Functions
+10. Perhatikan kode berikut:
+
+function calculate(value) {
+    return value < 2 ? value : (calculate(value - 1) + calculate(value - 2));
+}
+
+console.log(calculate(3));
+Jika kode di atas dijalankan, maka manakah hasilnya?
+B
+2
+Benar
+
+Kategori : Functions
+11. Berapa banyak parameter yang bisa dimiliki oleh suatu function?
+D Sesuai kebutuhan
+Benar
+
+12. Kategori : Object-Oriented Programming (OOP)
+Perhatikan kode di bawah ini.
+
+class Car { }
+const car = new Car();
+console.log(typeof Car);
+Apa output yang akan dihasilkan?
+C Function
+Benar
+
+Kategori : Object-Oriented Programming (OOP)
+13. Istilah pewarisan pada paradigma Object Oriented Programming biasa dikenal dengan…
+A
+Inheritance
+Benar
+
+Kategori : Object-Oriented Programming (OOP)
+14. Perhatikan kode constructor function berikut.
+
+function car({ brand, maxSpeed, wheelCount }) {
+  this.brand = brand;
+  this.maxSpeed = maxSpeed;
+  this.wheelCount = wheelCount;
+}
+
+const myCar = car({ brand: 'Toyota', maxSpeed: 200, wheelCount: 4 });
+Jika kode di atas dijalankan, objek myCar gagal dibuat. Apa alasannya?
+C Pemanggilan constructor function car harus diawali dengan keyword new.
+Benar
+
+Kategori : Functional Programming (FP)
+15. Apakah yang dimaksud dengan Functional Programming?
+B Paradigma pemrograman di mana proses komputasi didasarkan pada fungsi matematika murni.
+Benar
+
+Kategori : Functional Programming (FP)
+16. Manakah kode berikut ini yang tidak menerapkan higher-order function?
+B function product(firstNumber, secondNumber) {
+    return firstNumber * secondNumber;
+}
+Benar
+
+Kategori : Set Environment
+17. Bagaimanakah karakteristik API pada Node.js?
+A Asynchronous
+Benar
+
+Kategori : Set Environment
+18. Bagaimana cara memeriksa versi NPM yang terinstal saat ini?
+A npm --version
+C npm --ver
+
+Kategori : Module
+19 Cara yang tepat untuk meng-export beberapa nilai sekaligus dalam module adalah ...
+B Menyimpan setiap nilai pada object literals.
+Benar
+
+Kategori : Module
+20. Berikut ini adalah alasan untuk menerapkan module pada project JavaScript, kecuali...
+D Membebaskan program dari adanya error/bug.
+Benar
+
+Kategori : Error Handling
+21. Manakah keyword berikut ini yang digunakan untuk mendapatkan tipe dari eror yang terjadi?
+B instanceOf
+Benar
+
+Kategori : Error Handling
+22. Perhatikan kode berikut:
+
+class MyCustomError extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "MyError";
+    }
+}
+
+try {
+    throw new MyCustomError("This is an error");
+} catch (e) {
+    console.log(e.message);
+}
+Output ketika kode di atas dijalankan adalah...
+B This is an error
+Benar
+
+Kategori : Error Handling
+23. Manakah keyword berikut ini yang digunakan untuk membuat error secara manual?
+C throw
+Benar
+
+Kategori : Concurrency
+24. Perhatikan kode berikut:
+
+function main() {
+    try {
+        console.log("Fetching username...");
+        const username = await fetchUsername();
+        console.log(`You are logged in as ${username}`);
+        console.log("Welcome!");
+    } catch(e) {
+        console.log("Username tidak ditemukan");
+    }
+}
+Kode di atas ternyata eror ketika dijalankan. Apa penyebabnya?
+A Fungsi main belum ditambahkan keyword async.
+Benar
+
+Kategori : Concurrency
+25. Perhatikan kode berikut:
+
+function fetchUsername() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('JSUser');
+        }, 3000);
+    })
+}
+
+console.log("Fetching username...");
+fetchUsername().then((value) => {
+    console.log(`You are logged in as ${value}`);
+})
+console.log("Welcome!");
+Output ketika kode di atas dijalankan adalah...
+B Fetching username...
+Welcome!
+You are logged in as JSUser
+Benar
+
+Kategori : Concurrency
+26. Perhatikan kode berikut:
+
+function fetchUsername() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('JSUser');
+        }, 3000);
+    })
+}
+
+console.log("Fetching username...");
+const username = fetchUsername();
+console.log(`You are logged in as ${username}`);
+console.log("Welcome!");
+Output ketika kode di atas dijalankan adalah...
+D Fetching username…
+You are logged in as [object Promise]
+Welcome!
+Benar
+
+Kategori : Node Package Manager
+27. Apakah format yang digunakan untuk mengelola package pada NPM?
+D JSON
+Benar
+
+Kategori : Node Package Manager
+28. Manakah dari pilihan berikut ini yang bukan merupakan fungsi file package-lock.json?
+A Menyimpan informasi package global yang digunakan.
+Benar
+
+Kategori : Testing
+29. Anda memiliki skenario pengujian seperti berikut:
+
+test('should return the minimum number between 3 arguments', () => {
+    expect(findMin(1, 2, 3)).toEqual(1);
+    expect(findMin(5, 1, 2)).toEqual(1);
+    expect(findMin(102, 404, 48)).toEqual(48);
+    expect(findMin(-1, 0, -1)).toEqual(-1);
+    expect(findMin(2, 2, 2)).toEqual(2);
+});
+Ada banyak cara atau algoritma untuk memenuhi skenario di atas. Pilihlah fungsi yang gagal memenuhi pengujian tersebut!
+D function findMin(a, b, c) {
+    let minValue = 0;
+
+    if (a < b) {
+        minValue = a;
+    } else if (b < c) {
+        minValue = b;
+    } else {
+        minValue = c;
+    }
+
+    return minValue;
+}
+Benar
+
+Kategori : Testing
+30. Berikut ini adalah beberapa alasan perlu menerapkan automated testing, kecuali...
+B Meningkatkan kecepatan dan performa aplikasi.
+
+C
+Penghematan biaya waktu (time cost) pada pengembangan aplikasi.
+
+D
+Mengatasi testing manual yang rawan akan kesalahan.
+
+Benar
