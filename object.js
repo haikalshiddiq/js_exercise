@@ -26,10 +26,10 @@
 
 // TODO
 const restaurant = {
-	name:"Ahmad",
-  	city:"banda",
-  	"favorite drink":"cola",
-  	"favorite food":"sirup",
+	name:"Haikal Shiddiq",
+  	city:"Jakarta",
+  	"favorite drink":"Mineral Water",
+  	"favorite food":"Pizza",
   	"isVegan":true
 }
 
